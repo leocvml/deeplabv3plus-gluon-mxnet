@@ -33,7 +33,7 @@ each pixel in the image an object class.
 
 ```
 
-**class introduction**
+## class introduction##
 
 
 ***label_indices:*** 
