@@ -272,12 +272,13 @@ def LoadDataset(dir, batchsize, output_shape, colormap=None, classes=None):
 
 
 train_dir = 'VOC_less/'
-
+test_dir = 'VOC_less/'
 ctx = mx.gpu()
 batch_size = 3
 resize = (480, 320)
 train_iter = LoadDataset(train_dir, batch_size, resize, voc_colormap,
                          classes)  # default is for 2 class if you want to multiclass
+test_iter = LoadDataset(test_dir, batch_size, resize, voc_colormap, classes)
 
 for d, l in train_iter:
     break
