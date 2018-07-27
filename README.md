@@ -11,6 +11,15 @@ this repo attemps to reproduce [Encoder-Decoder with Atrous Separable Convolutio
 
 **I use DenseNet as backbone instead of DCNN layer(Atrous Conv)**
 
+## quick start ##
+```python
+1. clone( download)
+2. execution deeplabv3+  ( training on VOC_less just 7 image)
+3. show our training result ( you can change code in line 351)
+
+```
+
+
 # tutorials #
 **generate dataloader for segmentaion model**
 ```
@@ -25,13 +34,7 @@ each pixel in the image an object class.
 ![](https://github.com/leocvml/deeplabv3plus-gluon-mxnet/blob/master/hackmdimg/vocb.jpg)
 ![](https://github.com/leocvml/deeplabv3plus-gluon-mxnet/blob/master/hackmdimg/segb.PNG)
 
-## quick start ##
-```python
-1. clone( download)
-2. execution deeplabv3+  ( training on VOC_less just 7 image)
-3. show our training result ( you can change code in line 351)
 
-```
 
 ## class introduction##
 
