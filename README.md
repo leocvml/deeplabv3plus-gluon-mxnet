@@ -25,6 +25,13 @@ each pixel in the image an object class.
 ![](https://github.com/leocvml/deeplabv3plus-gluon-mxnet/blob/master/hackmdimg/vocb.jpg)
 ![](https://github.com/leocvml/deeplabv3plus-gluon-mxnet/blob/master/hackmdimg/segb.PNG)
 
+## quick start ##
+```python
+1. clone( download)
+2. execution deeplabv3+  ( training on VOC_less just 7 image)
+3. show our training result ( you can change code in line 351)
+
+```
 
 **class introduction**
 
@@ -270,6 +277,7 @@ class Deeplabv3(nn.HybridBlock):
 
 
 # Note #
+training current model on VOC is ongoing 
 i will keep going on Xception model and Atrous Conv, and fine tuning on benchmark dataset
 
 
