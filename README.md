@@ -283,4 +283,6 @@ class Deeplabv3(nn.HybridBlock):
 training current model on VOC is ongoing 
 i will keep going on Xception model and Atrous Conv, and fine tuning on benchmark dataset
 
-
+this repo is want to help people learn more about gluon 
+if you want to complete reproduce ,follow this repo
+https://github.com/duducheng/deeplabv3p_gluon
