@@ -11,6 +11,11 @@ this repo attemps to reproduce [Encoder-Decoder with Atrous Separable Convolutio
 
 **I use DenseNet as backbone instead of DCNN layer(Atrous Conv)**
 
+## Requirements ##
+```
+mxnet 0.11.0
+```
+
 ## quick start ##
 ```python
 1. clone( download)
@@ -268,6 +273,8 @@ class Deeplabv3(nn.HybridBlock):
 
         return output
 ```
+## result ##
+![](https://github.com/leocvml/deeplabv3plus-gluon-mxnet/blob/master/hackmdimg/deeplabv3_result.PNG)
 
 
 
