@@ -166,7 +166,11 @@ train_iter = LoadDataset(dir, batch_size, resize, voc_colormap, classes)   # def
 ```
 ## network arch ##
 **follow this architecture but use densenet instead of DCNN layer**
+### this is original network ###
 ![](https://github.com/leocvml/deeplabv3plus-gluon-mxnet/blob/master/hackmdimg/deeplabv3arch.PNG)
+
+### this is my implement network ###
+![](https://github.com/leocvml/deeplabv3plus-gluon-mxnet/blob/master/hackmdimg/github_dpv3%2B.png)
 
 ```python
 
