@@ -13,7 +13,7 @@ this repo attemps to reproduce [Encoder-Decoder with Atrous Separable Convolutio
 
 ## Requirements ##
 ```
-mxnet 0.11.0
+mxnet 1.1.0
 ```
 
 ## quick start ##
