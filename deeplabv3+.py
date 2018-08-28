@@ -20,19 +20,19 @@ class stemblock(nn.HybridBlock):
         self.bn1 = nn.BatchNorm()
         self.act1 = nn.Activation('relu')
 
-        self.conv2 = nn.Conv2D(self.filters, kernel_size=1, strides=1)
+        self.conv2 = nn.Conv2D(self.filters,kernel_size=3, padding=1, strides=1)
         self.bn2 = nn.BatchNorm()
         self.act2 = nn.Activation('relu')
 
-        self.conv3 = nn.Conv2D(self.filters, kernel_size=1, strides=1)
+        self.conv3 = nn.Conv2D(self.filters,kernel_size=3, padding=1,strides=1)
 
         self.pool = nn.MaxPool2D(pool_size=(2, 2), strides=2)
 
     def hybrid_forward(self, F, x):
         stem1 = self.act1(self.bn1(self.conv1(x)))
         stem2 = self.act2(self.bn2(self.conv2(stem1)))
-        stem3 = self.conv3(stem2)
-        out = self.pool(stem3)
+        stem3 = self.pool(stem2)
+        out = self.conv3(stem3)
         return out
 
 
