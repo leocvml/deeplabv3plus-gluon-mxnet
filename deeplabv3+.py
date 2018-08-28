@@ -302,8 +302,7 @@ net.initialize()
 
 softmax_CE = gluon.loss.SoftmaxCrossEntropyLoss(axis=1)
 net.collect_params().reset_ctx(ctx=ctx)
-trainer = gluon.Trainer(net.collect_params(), 'sgd', {'learning_rate': 0.001, 'wd': 5e-4})
-
+trainer = gluon.Trainer(net.collect_params(), 'adam', {'learning_rate': 0.001})
 filename = 'VOC_less.params'
 net.load_params(filename, ctx=ctx)
 import time
